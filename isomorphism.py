@@ -25,5 +25,8 @@ C.add_edges_from(edgesC)
 
 # Testing if isomorphism are present
 
-print(f"Are graphs A and B isomorphic? {nx.vf2pp_is_isomorphic(B,C)}")
-print(f"{nx.vf2pp_isomorphism(B, C)}")
+print(f"Are graphs A and B isomorphic? {nx.vf2pp_is_isomorphic(A,B)}")
+print(f"f: V(A) -> V(B):\n{nx.vf2pp_isomorphism(A,B)}")
+
+print(f"Are graphs A and C isomorphic? {nx.vf2pp_is_isomorphic(A,C)}")
+print(f"f: V(A) -> V(C):\n{nx.vf2pp_isomorphism(A,C)}")
